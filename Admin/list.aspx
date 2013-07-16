@@ -19,7 +19,7 @@
                 return false;
             }),
             paths: {
-                'cacheSvr': 'http://localhost:90'
+                'cacheSvr': window.location.protocol + '//' + window.location.host
             }
         };
         var require = window.km.config;

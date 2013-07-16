@@ -1,6 +1,6 @@
 ﻿define([
     '../../widget/tagger/main',
-    '../../widget/cssHelper/main',
+    '../../widget/css-render/main',
     'csstemplate!./default.css',
     'template!./default.html',
     '../../widget/html5/main'

@@ -1,5 +1,7 @@
-﻿define(['jquery', '../../masterpage/main'], function ($) {
+﻿define(['../../masterpage/main', 'jquery', '../../../widget/css-render/main', 'csstemplate!./default.css'], function (masterpage, $, cssRender, cssTxt) {
     $(function ($) {
+        cssRender.append(cssTxt);
+
         var htmlStatus = '<select name="status">' + $('#plum-hide > select[name=status]').html() + '</select>',
             $frmStatus = $('#plum-admin-list-frm-status'),
             $frmDel = $('#plum-admin-list-frm-del');

@@ -16,7 +16,7 @@
                 'cacheSvr': cacheSvr,
                 'jquery': cacheSvr + '/ui/src/js/jquery/1.7.2/main',
                 'template': cacheSvr + '/ui/src/js/widget/template/main',
-                'csstemplate': cacheSvr + '/ui/src/js/widget/csstemplate/main'
+                'csstemplate': cacheSvr + '/ui/src/js/widget/css-template/main'
             }
         };
     

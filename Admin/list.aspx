@@ -30,9 +30,9 @@
     </script>
     <script type="text/javascript">
         require.config({context: window.km.config.context})(['cacheSvr/ui/src/js/require/config/main', 'require'], function (config, require) {
-            require(['cacheSvr/ui/src/js/page/masterpage/main', 'cacheSvr/ui/src/js/page/admin/list/main']);
+            require(['cacheSvr/ui/src/js/page/admin/list/main']);
         });
-    </script> 
+    </script>
 </head>
 <body>
     <table width="100%">
@@ -73,6 +73,10 @@
             </ItemTemplate>
         </asp:Repeater>
     </table>
+
+    <br />
+
+    <div class="plum-page"><%=pageLink %></div>
 
     <div id="plum-hide" style="display:none;">
         <select name="status">

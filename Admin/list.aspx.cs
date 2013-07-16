@@ -10,6 +10,7 @@ public partial class Admin_list : System.Web.UI.Page
     protected int pagesize = 10;
     protected int page = 1;
     protected int count = 0;
+    protected string pageLink = "";
     protected void Page_Load(object sender, EventArgs e)
     {
         try
@@ -35,7 +36,7 @@ public partial class Admin_list : System.Web.UI.Page
             + "inner join PlumDB.dbo.[source] on main.[source] = [source].sourceid) "
             + "left join PlumDB.dbo.customer on main.customerId = customer.customerid) "
             + "inner join PlumDB.dbo.[status] on main.[status] = [status].statusid) "
-            + ((page > 1) ? "where (id not in (select top " + pagesize.ToString() + "*" + (page - 1).ToString() + " id from PlumDB.dbo.main order by insertDatetime desc)) " : "")
+            + ((page > 1) ? "where (id not in (select top " + (pagesize * (page - 1)).ToString() + " id from PlumDB.dbo.main order by insertDatetime desc)) " : "")
             + "order by insertDatetime desc "
             + "select COUNT(*) from PlumDB.dbo.main "
             + "select * from PlumDB.dbo.status with(nolock) order by statusid asc ",
@@ -53,6 +54,56 @@ public partial class Admin_list : System.Web.UI.Page
         this.listRepeater.DataBind();
 
         count = int.Parse(ds.Tables[1].Rows[0][0].ToString());
+
+        var countPage = (count / pagesize) + ((count % pagesize) > 0 ? 1 : 0);
+        var pageLinkSize = 4;
+        var url = System.Text.RegularExpressions.Regex.Replace(Request.Url.ToString(), "[\\?&]page=[^&]*?$", "", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        url = System.Text.RegularExpressions.Regex.Replace(url, "([\\?&])page=[^&]*?&", "$1", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        var separator = System.Text.RegularExpressions.Regex.IsMatch(url, "\\?", System.Text.RegularExpressions.RegexOptions.IgnoreCase) ? "&" : "?";
+        var begin = 1;
+        var end = countPage;
+        if ((pageLinkSize * 2 + 1) < countPage)
+        {
+            if ((page - pageLinkSize) < 1)
+            {
+                end = pageLinkSize * 2 + 1;
+            }
+            else if ((page + pageLinkSize) > countPage)
+            {
+                begin = end - (pageLinkSize * 2 + 1);
+            }
+            else {
+                begin = page - pageLinkSize;
+                end = page + pageLinkSize;
+            }
+        }
+        for (var i = begin; i <= end; i++) {
+            var link = "";
+            if (i == 1)
+            {
+                link = url;
+            }
+            else
+            {
+                link = url + separator + "page=" + i;
+            }
+            if (i == page)
+            {
+                pageLink += "<span>" + i + "</span>";
+            }
+            else
+            {
+                pageLink += "<a href=\"" + link + "\">" + i + "</a>";
+            }
+        }
+        if (begin > 1)
+        {
+            pageLink = "<a href=\"" + url + "\">首页</a>" + pageLink;
+        }
+        if (end < countPage)
+        {
+            pageLink += "<a href=\"" + url + separator + "page=" + countPage + "\">尾页</a>";
+        }
 
         this.statusRepeater.DataSource = ds.Tables[2];
         this.statusRepeater.DataBind();

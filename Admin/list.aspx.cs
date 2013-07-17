@@ -7,12 +7,19 @@ using System.Web.UI.WebControls;
 
 public partial class Admin_list : System.Web.UI.Page
 {
+    protected int auth = -1;
     protected int pagesize = 10;
     protected int page = 1;
     protected int count = 0;
     protected string pageLink = "";
     protected void Page_Load(object sender, EventArgs e)
     {
+        try
+        {
+            auth = int.Parse(Session["auth"].ToString());
+        }
+        catch { }
+
         try
         {
             page = int.Parse(Request["page"].ToString());

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Plum</title>
+    <title>Admin List</title>
 
     <script type="text/javascript">
         window.km = window.km || {};
@@ -35,6 +35,8 @@
     </script>
 </head>
 <body>
+    <%if (auth >= 0)
+      {%>
     <table width="100%">
         <tr>
             <td>订单号</td>
@@ -49,7 +51,10 @@
             <td>邮编</td>
             <td>状态</td>
             <td>时间</td>
+            <%if (auth < 1000)
+                {%>
             <td align="center">操作</td>
+            <%} %>
         </tr>
         <asp:Repeater ID="listRepeater" runat="server">
             <ItemTemplate>
@@ -66,9 +71,13 @@
                     <td><%# Eval("zipcode") %></td>
                     <td class="plum-admin-list-status-feild"><%# Eval("status").ToString().Trim() %></td>
                     <td><%# Eval("insertDatetime") %></td>
+                    <%if (auth < 1000)
+                        {%>
                     <td align="center">
-                        <button class="plum-admin-list-btn-status">确定</button> <button class="plum-admin-list-btn-del">删除</button>
+                        <button class="plum-admin-list-btn-status">确定</button>
+                        <button class="plum-admin-list-btn-del">删除</button>
                     </td>
+                    <%} %>
                 </tr>
             </ItemTemplate>
         </asp:Repeater>
@@ -76,7 +85,7 @@
 
     <br />
 
-    <div class="plum-page"><%=pageLink %></div>
+    <div class="plum-page"><%=pageLink%></div>
 
     <div id="plum-hide" style="display:none;">
         <select name="status">
@@ -97,5 +106,6 @@
             <input name="id" type="hidden" />
         </form>
     </div>
+    <%} %>
 </body>
 </html>

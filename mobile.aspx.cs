@@ -5,8 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class form : System.Web.UI.Page
+public partial class mobile : System.Web.UI.Page
 {
+    protected bool debug = bool.Parse(System.Web.Configuration.WebConfigurationManager.AppSettings["debug"].ToString());
     protected void Page_Load(object sender, EventArgs e)
     {
         var err = false;

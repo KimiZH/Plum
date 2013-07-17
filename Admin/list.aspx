@@ -23,11 +23,8 @@
             }
         };
         var require = window.km.config;
-        
-        document.write('<scr' + 'ipt type="text/javascr' + 'ipt" src="' + window.km.config.paths.cacheSvr + 
-            (window.km.config.debug ? '/ui/src/js/require/2.0.4/main' : '/ui/dist/0.1.0/masterpage') 
-        + '.js"></scr' + 'ipt>');
     </script>
+    <script type="text/javascript" src="<%if (debug) {%>/ui/src/js/require/2.0.4/main<%} else {%>/ui/dest/0.1.0/admin/list<%} %>.js"></script>
     <script type="text/javascript">
         require.config({context: window.km.config.context})(['cacheSvr/ui/src/js/require/config/main', 'require'], function (config, require) {
             require(['cacheSvr/ui/src/js/page/admin/list/main']);

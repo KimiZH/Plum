@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 
 public partial class Admin_list : System.Web.UI.Page
 {
+    protected bool debug = bool.Parse(System.Web.Configuration.WebConfigurationManager.AppSettings["debug"].ToString());
     protected int auth = -1;
     protected int pagesize = 10;
     protected int page = 1;

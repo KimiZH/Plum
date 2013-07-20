@@ -154,7 +154,7 @@
             .section8 .section8-title
             {
                 font-size: 16px;
-                padding: 0 0 0.5em 0;
+                padding: 0 0 0.1em 0;
             }
         }
         .section9
@@ -177,17 +177,22 @@
         }
         .form-radio input
         {
+            /*
             position: absolute;
             height: 80%;
             width: 7.64%;
             margin-left: -7.64%;
+            */
         }
         .form-radio span
         {
+            /*
             position: absolute;
             top: 50%;
             margin-top: -14px;
+            */
             font-size: 18px;
+            line-height: 2.5em;
             color: #fff;
             margin-left: 0.5em;
         }
@@ -201,8 +206,11 @@
             font-size: 18px;
             color: #fff;
             text-align: right;
+            /*
             letter-spacing: 0.5em;
             width: 6.5em;
+            */
+            width: 4.5em;
         }
         .form-input-container
         {
@@ -214,6 +222,8 @@
         }
         .form-input
         {
+            width: 100%;
+            /*
             position: absolute;
             top: 0;
             left: 0;
@@ -222,10 +232,13 @@
             padding-right: 5%;
             height: 100%;
             border: 0;
+            */
             font-size: 16px;
             color: #222;
+            /*
             background: transparent url(/ui/src/js/page/mobile/_imgs/input.png) no-repeat center center;
             background-size: cover;
+            */
         }
         .form-submit
         {
@@ -393,19 +406,21 @@
         <div class="section9">
             <form method="post" action="#" target="_self">
                 <div class="form-radio">
-                    <img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" /><input name="typeid" type="radio" />
+                    <!--<img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" />-->
+                    <input name="typeid" type="radio" />
                     <span>6个装一个月套餐</span>
                 </div>
                 <div class="form-radio">
-                    <img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" /><input name="typeid" type="radio" />
+                    <!--<img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" />-->
+                    <input name="typeid" type="radio" />
                     <span>6个装一个月套餐</span>
                 </div>
                 <div class="form-table">
                     <table style="width:100%;">
                         <tr>
-                            <td class="form-lable">收 件 人</td>
+                            <td class="form-lable">收&nbsp;&nbsp;件&nbsp;&nbsp;人&nbsp;</td>
                             <td class="form-input-container">
-                                <img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />
+                                <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
                                 <input class="form-input" name="name" type="text" />
                             </td>
                         </tr>
@@ -413,9 +428,9 @@
                             <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="form-lable">地 &nbsp;&nbsp; 址</td>
+                            <td class="form-lable">地&nbsp;&nbsp;址&nbsp;</td>
                             <td class="form-input-container">
-                                <img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />
+                                <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
                                 <input class="form-input" name="address" type="text" />
                             </td>
                         </tr>
@@ -423,9 +438,9 @@
                             <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="form-lable">邮 &nbsp;&nbsp; 编</td>
+                            <td class="form-lable">邮&nbsp;&nbsp;编&nbsp;</td>
                             <td class="form-input-container">
-                                <img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />
+                                <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
                                 <input class="form-input" name="zipcode" type="text" />
                             </td>
                         </tr>
@@ -433,9 +448,9 @@
                             <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="form-lable">收件电话</td>
+                            <td class="form-lable">收件电话&nbsp;</td>
                             <td class="form-input-container">
-                                <img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />
+                                <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
                                 <input class="form-input" name="mobile" type="text" />
                             </td>
                         </tr>

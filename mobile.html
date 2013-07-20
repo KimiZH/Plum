@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title></title>
+    <title>泰尔</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
     <style type="text/css">
         body
@@ -363,7 +363,7 @@
         </div>
         <div class="section-btn">
             <a class="section-btn-left" href="tel:4001889892"><img src="/ui/src/js/page/mobile/_imgs/btn-tel.jpg" /></a>
-            <a class="section-btn-right"><img src="/ui/src/js/page/mobile/_imgs/btn-order.jpg" /></a>
+            <a class="section-btn-right" href="javascript:void(0);"><img src="/ui/src/js/page/mobile/_imgs/btn-order.jpg" /></a>
         </div>
         <img class="section3" src="/ui/src/js/page/mobile/_imgs/section3.jpg" />
         <div class="section5">
@@ -390,7 +390,7 @@
         <img class="section7" src="/ui/src/js/page/mobile/_imgs/section7.jpg" />
         <div class="section-btn">
             <a class="section-btn-left" href="tel:4001889892"><img src="/ui/src/js/page/mobile/_imgs/btn-tel.jpg" /></a>
-            <a class="section-btn-right"><img src="/ui/src/js/page/mobile/_imgs/btn-order.jpg" /></a>
+            <a class="section-btn-right" href="javascript:void(0);"><img src="/ui/src/js/page/mobile/_imgs/btn-order.jpg" /></a>
         </div>
         <div class="section8">
             <img src="/ui/src/js/page/mobile/_imgs/section8.jpg" />
@@ -405,6 +405,17 @@
         </div>
         <div class="section9">
             <form method="post" action="#" target="_self">
+                <input name="number" type="hidden" value="1" />
+                <input name="source" type="hidden" value="1" />
+                <asp:Repeater ID="typeidRepeater" runat="server">
+                    <ItemTemplate>
+                        <div class="form-radio">
+                            <!--<img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" />-->
+                            <input name="typeid" type="radio" value="<%# Eval("typeid") %>" />
+                            <span><%# Eval("title") %></span>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
                 <div class="form-radio">
                     <!--<img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" />-->
                     <input name="typeid" type="radio" />

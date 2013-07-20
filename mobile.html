@@ -3,7 +3,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>泰尔</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
     <style type="text/css">
         body
         {
@@ -351,7 +353,7 @@
     <script type="text/javascript" src="/ui/src/js/require/2.0.4/main.js"></script>
     <script type="text/javascript">
         require.config({context: window.km.config.context})(['cacheSvr/ui/src/js/require/config/main', 'require'], function (config, require) {
-            require(['cacheSvr/ui/src/js/page/mobile/test']);
+            require(['cacheSvr/ui/src/js/page/mobile/mobile']);
         });
     </script>
 </head>
@@ -404,26 +406,17 @@
             </div>
         </div>
         <div class="section9">
-            <form method="post" action="#" target="_self">
+            <form method="post" action="posthandler.aspx" target="_self">
                 <input name="number" type="hidden" value="1" />
                 <input name="source" type="hidden" value="1" />
-                <asp:Repeater ID="typeidRepeater" runat="server">
-                    <ItemTemplate>
-                        <div class="form-radio">
-                            <!--<img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" />-->
-                            <input name="typeid" type="radio" value="<%# Eval("typeid") %>" />
-                            <span><%# Eval("title") %></span>
-                        </div>
-                    </ItemTemplate>
-                </asp:Repeater>
                 <div class="form-radio">
                     <!--<img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" />-->
-                    <input name="typeid" type="radio" />
-                    <span>6个装一个月套餐</span>
+                    <input name="typeid" type="radio" value="1" />
+                    <span>4个装一个月套餐</span>
                 </div>
                 <div class="form-radio">
                     <!--<img src="/ui/src/js/page/mobile/_imgs/radio-btn.jpg" />-->
-                    <input name="typeid" type="radio" />
+                    <input name="typeid" type="radio" value="2" />
                     <span>6个装一个月套餐</span>
                 </div>
                 <div class="form-table">

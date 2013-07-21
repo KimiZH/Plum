@@ -1,11 +1,12 @@
 ﻿<%@ Application Language="C#" %>
+<%@ Import Namespace="System.Web.Routing" %>
 
 <script runat="server">
 
     void Application_Start(object sender, EventArgs e) 
     {
         // Code that runs on application startup
-
+        RegisterRoutes(RouteTable.Routes);
     }
     
     void Application_End(object sender, EventArgs e) 
@@ -33,6 +34,11 @@
         // is set to InProc in the Web.config file. If session mode is set to StateServer 
         // or SQLServer, the event is not raised.
 
+    }
+
+    void RegisterRoutes(RouteCollection routeCollection)
+    {
+        routeCollection.MapPageRoute("index", "", "~/mobile.aspx?product=1");
     }
        
 </script>

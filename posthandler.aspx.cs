@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 
 public partial class posthandler : System.Web.UI.Page
 {
+    protected bool debug = bool.Parse(System.Web.Configuration.WebConfigurationManager.AppSettings["debug"].ToString());
     protected void Page_Load(object sender, EventArgs e)
     {
         var err = false;
@@ -279,11 +280,7 @@ public partial class posthandler : System.Web.UI.Page
 
         if (err)
         {
-            Response.Write(msgErr);
-        }
-        else
-        {
-            Response.Write("Successed");
+            this.msg.InnerHtml = "您提交的订单有错误！请 <a href=\"javascript:history.go(-1);\" style=\"color:red;\">点这里</a> 重新填写。<br /> <span>" + msgErr + "</span>";
         }
     }
 }

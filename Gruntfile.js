@@ -199,11 +199,18 @@ module.exports = function(grunt) {
                     out: 'ui/dest/<%= pkg.version %>/mobile.js'
                 })
             },
-            admin_login: {
+            mobile: {
                 options: $.extend(true, {}, mainConfig, {
-                    include: ['cacheSvr/ui/src/js/page/admin/login/main'],
+                    include: ['cacheSvr/ui/src/js/page/posthandler/main'],
                     excludeShallow: [],
-                    out: 'ui/dest/<%= pkg.version %>/admin/login.js'
+                    out: 'ui/dest/<%= pkg.version %>/posthandler.js'
+                })
+            },
+            admin_default: {
+                options: $.extend(true, {}, mainConfig, {
+                    include: ['cacheSvr/ui/src/js/page/admin/default/main'],
+                    excludeShallow: [],
+                    out: 'ui/dest/<%= pkg.version %>/admin/default.js'
                 })
             },
             admin_list: {

@@ -198,6 +198,11 @@
             color: #fff;
             margin-left: 0.5em;
         }
+        .form-radio span b
+        {
+            color: Red;
+            font-weight: bold;
+        }
         .form-table
         {
             margin: 0 12.64%;
@@ -214,6 +219,13 @@
             */
             width: 4.5em;
         }
+        .form-lable div
+        {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: red;
+        }
         .form-input-container
         {
             position: relative;
@@ -225,6 +237,7 @@
         .form-input
         {
             width: 100%;
+            height: 100%;
             /*
             position: absolute;
             top: 0;
@@ -422,7 +435,10 @@
                 <div class="form-table">
                     <table style="width:100%;">
                         <tr>
-                            <td class="form-lable">收&nbsp;&nbsp;件&nbsp;&nbsp;人&nbsp;</td>
+                            <td class="form-lable">
+                                收&nbsp;&nbsp;件&nbsp;&nbsp;人&nbsp;
+                                <div>（必填）</div>
+                            </td>
                             <td class="form-input-container">
                                 <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
                                 <input class="form-input" name="name" type="text" />
@@ -432,10 +448,26 @@
                             <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td class="form-lable">地&nbsp;&nbsp;址&nbsp;</td>
+                            <td class="form-lable">
+                                手&nbsp;&nbsp;机&nbsp;&nbsp;号&nbsp;
+                                <div>（必填）</div>
+                            </td>
                             <td class="form-input-container">
                                 <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
-                                <input class="form-input" name="address" type="text" />
+                                <input class="form-input" name="mobile" type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="form-lable">
+                                地&nbsp;&nbsp;址&nbsp;
+                                <div>（必填）</div>
+                            </td>
+                            <td class="form-input-container">
+                                <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
+                                <textarea class="form-input" name="address" rows="4"></textarea>
                             </td>
                         </tr>
                         <tr>
@@ -446,16 +478,6 @@
                             <td class="form-input-container">
                                 <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
                                 <input class="form-input" name="zipcode" type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td class="form-lable">收件电话&nbsp;</td>
-                            <td class="form-input-container">
-                                <!--<img class="form-input-bg" src="/ui/src/js/page/mobile/_imgs/input-bg.jpg" />-->
-                                <input class="form-input" name="mobile" type="text" />
                             </td>
                         </tr>
                     </table>

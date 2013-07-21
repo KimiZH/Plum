@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="default.aspx.cs" Inherits="Admin_default" %><!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -24,10 +24,10 @@
         };
         var require = window.km.config;
     </script>
-    <script type="text/javascript" src="/ui/dest/0.1.0/admin/login.js"></script>
+    <script type="text/javascript" src="<%if (debug) {%>/ui/src/js/require/2.0.4/main<%} else {%>/ui/dest/0.1.0/admin/default<%} %>.js"></script>
     <script type="text/javascript">
         require.config({context: window.km.config.context})(['cacheSvr/ui/src/js/require/config/main', 'require'], function (config, require) {
-            require(['cacheSvr/ui/src/js/page/admin/login/main']);
+            require(['cacheSvr/ui/src/js/page/admin/default/main']);
         });
     </script>
 </head>

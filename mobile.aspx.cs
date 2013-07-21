@@ -17,12 +17,15 @@ public partial class mobile : System.Web.UI.Page
 
         try
         {
-            requestProduct = Request["product"].ToString();
+            requestProduct = Page.RouteData.Values["product"].ToString();
         }
         catch
         {
             err = true;
             msgErr = "product error";
+        }
+        if (err) {
+            requestProduct = "1";
         }
 
         if (!err)

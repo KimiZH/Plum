@@ -21,10 +21,8 @@ public partial class mobile : System.Web.UI.Page
         }
         catch
         {
-            err = true;
-            msgErr = "product error";
-        }
-        if (err) {
+            //err = true;
+            //msgErr = "product error";
             requestProduct = "1";
         }
 

@@ -1,4 +1,94 @@
-﻿.plum-page {
+﻿body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei, SimSun;
+}
+.plum-container
+{
+    *zoom: 1;
+}
+.plum-container:before,
+.plum-container:after
+{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.plum-container:after
+{
+    clear: both;
+}
+
+.plum-admin-body
+{
+    padding: 10px;
+}
+.plum-amdin-header-left,
+.plum-amdin-header-right
+{
+    width: 50%;
+}
+.plum-amdin-header-left
+{
+    float: left;
+    font-size: 18px;
+    color: #9c9696;
+}
+.plum-amdin-header-right
+{
+    float: right;
+    text-align: right;
+}
+.plum-amdin-header-logo
+{
+    display: inline-block;
+    *display: inline;
+    width: 98px;
+    height: 49px;
+    background: url(/ui/src/js/page/admin/default/_imgs/main.png) no-repeat left top;
+    margin-right: 1.5em;
+}
+.plum-amdin-header-username
+{
+    font-size: 18px;
+    color: #9c9696;
+    margin-right: 1.5em;
+}
+a.plum-amdin-header-loginout,
+a.plum-amdin-header-loginout:visited,
+a.plum-amdin-header-loginout:hover
+{
+    font-size: 14px;
+    color: #9c9696;
+    text-decoration: none;
+}
+a.plum-amdin-header-loginout:hover
+{
+    text-decoration: underline;
+}
+.plum-amdin-header-loginout span
+{
+    display: inline-block;
+    *display: inline;
+    width: 58px;
+    height: 54px;
+    background: url(/ui/src/js/page/admin/default/_imgs/main.png) no-repeat center -51px;
+}
+.plum-amdin-bottom
+{
+    text-align: center;
+    margin-top: 4em;
+    font-size: 12px;
+    color: #9c9696;
+}
+
+.plum-amdin-list-body
+{
+    margin-top: 3em;
+}
+
+.plum-page {
     text-align: center;
 }
 .plum-page a, 

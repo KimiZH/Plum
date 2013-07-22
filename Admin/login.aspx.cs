@@ -86,7 +86,7 @@ public partial class Admin_login : System.Web.UI.Page
 
         if (err)
         {
-            Response.Redirect("/admin/login.html?err=" + System.Web.HttpUtility.UrlEncode(msgErr, System.Text.Encoding.GetEncoding(65001)).Replace("+", "%20"));
+            Response.Redirect("/admin/?err=" + System.Web.HttpUtility.UrlEncode(msgErr, System.Text.Encoding.GetEncoding(65001)).Replace("+", "%20"));
         }
         else
         {

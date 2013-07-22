@@ -33,14 +33,26 @@
 </head>
 <body>
 
-    <div style="margin: 6em auto 0 auto; width: 250px; text-align: center;">
-        <div id="msgErr" style="color: Red; padding-bottom: 1em;">&nbsp;</div>
-        <form method="post" action="/admin/login.aspx" target="_self">
-            用户：<input name="user" type="text" /><br />
-            密码：<input name="password" type="password" /><br />
-            <br />
-            <input type="submit" value="登陆" />
-        </form>
+    <div class="plum-container plum-admin-body">
+        <div class="plum-container plum-amdin-login">
+            <div class="plum-amdin-login-top-left">Mobilize & Socialize</div>
+            <div class="plum-amdin-login-top-right"></div>
+        </div>
+        <div class="plum-container plum-amdin-login-title">WE-ME 电子营销后台管理系统</div>
+        <div class="plum-container plum-admin-login-table-container">
+            <div id="msgErr" style="color: Red; padding-bottom: 1em;">&nbsp;</div>
+            <div class="plum-admin-login-table">
+                <form method="post" action="/admin/login.aspx" target="_self">
+                    <div><input class="plum-admin-login-name" name="user" type="text" /></div>
+                    <div><input class="plum-admin-login-password" name="password" type="password" /></div>
+                    <div class="plum-admin-login-table-btn">
+                        <button type="submit">登 陆</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="plum-container plum-amdin-login-icon1"></div>
+        <div class="plum-container plum-amdin-bottom">All rights reserved © 2013 EWE Digital - 沪沪ICP备13016439号</div>
     </div>
 
 </body>

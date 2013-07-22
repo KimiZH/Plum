@@ -1,4 +1,9 @@
-﻿define(['../../masterpage/main', 'jquery', '../../../widget/css-render/main', 'csstemplate!./default.css'], function (masterpage, $, cssRender, cssTxt) {
+﻿define([
+    '../../masterpage/main',
+    '../../../widget/css-render/main',
+    'csstemplate!./default.css',
+    'jquery'
+], function (masterpage, cssRender, cssTxt, $) {
     $(function ($) {
         cssRender.append(cssTxt);
 

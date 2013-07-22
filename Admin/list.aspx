@@ -34,6 +34,19 @@
 <body>
     <%if (auth >= 0)
       {%>
+    <div class="plum-container plum-admin-body">
+        <div class="plum-container plum-amdin-header">
+            <div class="plum-amdin-header-left">
+                <div class="plum-amdin-header-logo"></div>
+                WE-ME 电子营销后台管理系统
+            </div>
+            <div class="plum-amdin-header-right">
+                <span class="plum-amdin-header-username">ADMIN</span> 
+                <a class="plum-amdin-header-loginout" href="/admin/loginout.aspx"><span></span><br />注销用户</a>
+            </div>
+        </div>
+
+        <div class="plum-amdin-list-body">
     <table width="100%">
         <tr>
             <td>订单号</td>
@@ -102,6 +115,10 @@
             <input name="url" type="hidden" />
             <input name="id" type="hidden" />
         </form>
+    </div>
+
+        </div>
+        <div class="plum-container plum-amdin-bottom">All rights reserved © 2013 EWE Digital - 沪沪ICP备13016439号</div>
     </div>
     <%} %>
 </body>

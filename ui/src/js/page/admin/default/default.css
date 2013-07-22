@@ -1,0 +1,108 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei, SimSun;
+}
+.plum-container
+{
+    *zoom: 1;
+}
+.plum-container:before,
+.plum-container:after
+{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.plum-container:after
+{
+    clear: both;
+}
+
+.plum-admin-body
+{
+    padding: 10px;
+}
+.plum-amdin-login-top-left,
+.plum-amdin-login-top-right
+{
+    width: 50%;
+    height: 48px;
+}
+.plum-amdin-login-top-left
+{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #686868;
+    padding: 14px 0;
+}
+.plum-amdin-login-top-right
+{
+    float: right;
+    background: url(/ui/src/js/page/admin/default/_imgs/main.png) no-repeat right top;
+}
+.plum-amdin-login-title
+{
+    text-align: center;
+    margin: 1em 0;
+    font-size: 40px;
+    color: #9c9696;
+}
+.plum-admin-login-table-container
+{
+    text-align: center;
+}
+.plum-admin-login-table
+{
+    display: inline-block;
+    *display: inline;
+    padding: 1.5em 1em;
+    border: solid 1px #ec8812;
+    background-color: #fef5ff;
+    text-align: left;
+}
+.plum-admin-login-table input
+{
+    border: solid 1px #ec8812;
+    margin-bottom: 1em;
+    padding-left: 32px;
+    width: 198px;
+}
+.plum-admin-login-name
+{
+    height: 24px;
+    background: #fef5ff url(/ui/src/js/page/admin/default/_imgs/main.png) no-repeat 6px -176px;
+}
+.plum-admin-login-password
+{
+    height: 24px;
+    background: #fef5ff url(/ui/src/js/page/admin/default/_imgs/main.png) no-repeat 6px -201px;
+}
+.plum-admin-login-table-btn
+{
+    text-align: center;
+}
+.plum-admin-login-table button
+{
+    border: 0;
+    background-color: #ec8812;
+    font-size: 18px;
+    color: #fff;
+    padding: 0.2em 1em;
+    cursor: pointer;
+}
+.plum-amdin-login-icon1
+{
+    margin-top: 4em;
+    height: 69px;
+    background: url(/ui/src/js/page/admin/default/_imgs/main.png) no-repeat center -107px;
+}
+.plum-amdin-bottom
+{
+    text-align: center;
+    margin-top: 4em;
+    font-size: 12px;
+    color: #9c9696;
+}

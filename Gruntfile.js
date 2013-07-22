@@ -199,7 +199,7 @@ module.exports = function(grunt) {
                     out: 'ui/dest/<%= pkg.version %>/mobile.js'
                 })
             },
-            mobile: {
+            posthandler: {
                 options: $.extend(true, {}, mainConfig, {
                     include: ['cacheSvr/ui/src/js/page/posthandler/main'],
                     excludeShallow: [],
@@ -227,6 +227,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['requirejs']);
     grunt.registerTask('mobile', ['requirejs:mobile']);
+    grunt.registerTask('posthander', ['requirejs:posthander']);
     grunt.registerTask('admin.login', ['requirejs:admin_login']);
     grunt.registerTask('admin.list', ['requirejs:admin_list']);
 };

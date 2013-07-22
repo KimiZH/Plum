@@ -171,6 +171,7 @@
             position: relative;
             margin: 0 5%;
             background: url(/ui/src/js/page/mobile/_imgs/section9-line.jpg) repeat-x center bottom;
+            cursor: pointer;
         }
         .form-radio img
         {

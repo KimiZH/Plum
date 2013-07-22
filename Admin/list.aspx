@@ -38,10 +38,10 @@
         <div class="plum-container plum-amdin-header">
             <div class="plum-amdin-header-left">
                 <div class="plum-amdin-header-logo"></div>
-                WE-ME 电子营销后台管理系统
+                <div class="plum-amdin-header-logo-title">WE-ME 电子营销后台管理系统</div>
             </div>
             <div class="plum-amdin-header-right">
-                <span class="plum-amdin-header-username">ADMIN</span> 
+                <span class="plum-amdin-header-username"><%=username %></span> 
                 <a class="plum-amdin-header-loginout" href="/admin/loginout.aspx"><span></span><br />注销用户</a>
             </div>
         </div>

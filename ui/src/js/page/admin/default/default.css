@@ -28,6 +28,7 @@
 .plum-amdin-login-top-right
 {
     width: 50%;
+    *width: 49%;
     height: 48px;
 }
 .plum-amdin-login-top-left
@@ -69,13 +70,14 @@
     margin-bottom: 1em;
     padding-left: 32px;
     width: 198px;
+    line-height: 24px;
 }
-.plum-admin-login-name
+.plum-admin-login-name input
 {
     height: 24px;
     background: #fef5ff url(/ui/src/js/page/admin/default/_imgs/main.png) no-repeat 6px -176px;
 }
-.plum-admin-login-password
+.plum-admin-login-password input
 {
     height: 24px;
     background: #fef5ff url(/ui/src/js/page/admin/default/_imgs/main.png) no-repeat 6px -201px;

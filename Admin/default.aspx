@@ -41,10 +41,10 @@
         <div class="plum-container plum-amdin-login-title">WE-ME 电子营销后台管理系统</div>
         <div class="plum-container plum-admin-login-table-container">
             <div id="msgErr" style="color: Red; padding-bottom: 1em;">&nbsp;</div>
-            <div class="plum-admin-login-table">
+            <div class="plum-container plum-admin-login-table">
                 <form method="post" action="/admin/login.aspx" target="_self">
-                    <div><input class="plum-admin-login-name" name="user" type="text" /></div>
-                    <div><input class="plum-admin-login-password" name="password" type="password" /></div>
+                    <div class="plum-admin-login-name"><input class="plum-admin-login-name" name="user" type="text" /></div>
+                    <div class="plum-admin-login-password"><input class="plum-admin-login-password" name="password" type="password" /></div>
                     <div class="plum-admin-login-table-btn">
                         <button type="submit">登 陆</button>
                     </div>

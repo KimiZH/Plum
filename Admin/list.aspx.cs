@@ -9,6 +9,7 @@ public partial class Admin_list : System.Web.UI.Page
 {
     protected bool debug = bool.Parse(System.Web.Configuration.WebConfigurationManager.AppSettings["debug"].ToString());
     protected int auth = -1;
+    protected string username = "";
     protected int pagesize = 30;
     protected int page = 1;
     protected int count = 0;
@@ -18,6 +19,16 @@ public partial class Admin_list : System.Web.UI.Page
         try
         {
             auth = int.Parse(Session["auth"].ToString());
+        }
+        catch { }
+        if (auth < 0) {
+            Response.Redirect("/admin");
+            Response.End();
+            return;
+        }
+        try
+        {
+            username = Session["username"].ToString();
         }
         catch { }
 

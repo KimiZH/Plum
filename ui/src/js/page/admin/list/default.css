@@ -92,6 +92,24 @@ a.plum-amdin-header-loginout:hover
 .plum-amdin-list-body
 {
     margin-top: 3em;
+    font-size: 14px;
+}
+.plum-amdin-list-th
+{
+    background-color: #f8d090;
+}
+.plum-amdin-list-th td
+{
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+.plum-admin-list-item td
+{
+    border-bottom: solid 1px black;
+}
+.plum-admin-list-item-active
+{
+    background-color: #eee;
 }
 
 .plum-page {

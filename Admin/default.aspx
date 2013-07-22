@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="plum-container plum-amdin-login-icon1"></div>
-        <div class="plum-container plum-amdin-bottom">All rights reserved © 2013 EWE Digital - 沪沪ICP备13016439号</div>
+        <div class="plum-container plum-amdin-bottom">All rights reserved © 2013 EWE Digital - 沪ICP备13016439号</div>
     </div>
 
 </body>

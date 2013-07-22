@@ -7,6 +7,15 @@
     $(function ($) {
         cssRender.append(cssTxt);
 
+        $('.plum-admin-list-item').hover(
+            function () {
+                $(this).addClass('plum-admin-list-item-active');
+            },
+            function () {
+                $(this).removeClass('plum-admin-list-item-active');
+            }
+        );
+
         var htmlStatus = '<select name="status">' + $('#plum-hide > select[name=status]').html() + '</select>',
             $frmStatus = $('#plum-admin-list-frm-status'),
             $frmDel = $('#plum-admin-list-frm-del');

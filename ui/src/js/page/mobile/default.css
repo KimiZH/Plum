@@ -12,6 +12,21 @@
     min-width: 320px;
     max-width: 768px;
 }
+.plum-container
+{
+    *zoom: 1;
+}
+.plum-container:before,
+.plum-container:after
+{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.plum-container:after
+{
+    clear: both;
+}
 .clear
 {
     width: 100%;
@@ -171,7 +186,7 @@
 {
     border-top: solid 4px #f1f2ec;
     color: #9eb800;
-    font-size: 18px;
+    font-size: 16px;
 }
 .section15 .first td
 {
@@ -230,7 +245,7 @@
 }
 .form-lable
 {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     text-align: right;
     width: 4.5em;
@@ -238,7 +253,7 @@
 .form-lable div
 {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: red;
 }

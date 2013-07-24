@@ -27,12 +27,6 @@
 {
     clear: both;
 }
-.clear
-{
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-}
 .section1
 {
     width: 100%;
@@ -89,7 +83,6 @@
 }
 .section6
 {
-    float: left;
     background-color: #f7fff6;
     padding: 1em 5% 0 5%;
 }
@@ -129,7 +122,6 @@
 .section8
 {
     position: relative;
-    float: left;
     width: 100%;
     margin-top: -0.2em;
 }
@@ -160,7 +152,8 @@
 }
 .section8 .section8-title
 {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
     padding: 0.4em 0;
 }
 @media (min-width: 320px) and (max-width: 449px) 
@@ -177,7 +170,7 @@
 }
 .section15
 {
-    margin: 2em 5%;
+    margin: 1em 5%;
     width: 90%;
     border-radius: 18px;
     border: solid 4px #f1f2ec;
@@ -205,11 +198,11 @@
 .section15 .line .middle
 {
     width: 6%;
+    text-align: center;
 }
 
 .section9
 {
-    float: left;
     width: 100%;
     background-color: #58ac00;
     padding: 1em 0;

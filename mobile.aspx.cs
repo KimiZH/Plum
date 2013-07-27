@@ -8,8 +8,20 @@ using System.Web.UI.WebControls;
 public partial class mobile : System.Web.UI.Page
 {
     protected bool debug = bool.Parse(System.Web.Configuration.WebConfigurationManager.AppSettings["debug"].ToString());
+    protected string source = "1";
     protected void Page_Load(object sender, EventArgs e)
     {
+        var glbURL = "";
+        try
+        {
+            glbURL = Request.Url.ToString();
+        }
+        catch { }
+        if (glbURL != "" && System.Text.RegularExpressions.Regex.IsMatch(glbURL, "https?://.*?igo1\\.cn[/$]"))
+        {
+            source = "3";
+        }
+
         var err = false;
         var msgErr = "";
 

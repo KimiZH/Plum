@@ -227,7 +227,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['requirejs']);
     grunt.registerTask('mobile', ['requirejs:mobile']);
-    grunt.registerTask('posthander', ['requirejs:posthander']);
+    grunt.registerTask('posthandler', ['requirejs:posthandler']);
     grunt.registerTask('admin.default', ['requirejs:admin_default']);
     grunt.registerTask('admin.list', ['requirejs:admin_list']);
 };

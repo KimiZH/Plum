@@ -40,7 +40,7 @@
             Hoodia P57--南非食用蝴蝶亚仙人掌（Hoodia）的天然有效成分，全球唯一健康、安全的天然食欲调节剂，在人体内能模仿血糖向大脑发出“饱腹感”信息，从而实现控制食欲、减肥或控制体重的目的。欧美大量临床研究证实：南非仙人掌P57源自食用植物，对人体没有任何副作用，男女老少皆宜，是目前欧美减肥的主流健康食品之一。
         </div>
         <div class="plum-container section-btn">
-            <a class="section-btn-left btn-tel" href="tel:4001889892"><span>&nbsp;</span>咨询电话 400-188-9892</a>
+            <a class="section-btn-left btn-tel" href="tel:4001889892" onclick="_gaq.push(['_trackEvent', 'tel', 'click', '400-188-9892 (1)']);"><span>&nbsp;</span>咨询电话 400-188-9892</a>
             <a class="section-btn-right btn-order" href="javascript:void(0);">立刻订购</a>
         </div>
         <div class="plum-container section3">
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="plum-container">
-            <a class="section11-btn btn-tel" href="tel:4001889892"><span>&nbsp;</span>咨询电话 400-188-9892</a>
+            <a class="section11-btn btn-tel" href="tel:4001889892" onclick="_gaq.push(['_trackEvent', 'tel', 'click', '400-188-9892 (2)']);"><span>&nbsp;</span>咨询电话 400-188-9892</a>
         </div>
         <div class="plum-container">
             <table class="section15" border="0" cellpadding="0" cellspacing="0">
@@ -179,7 +179,7 @@
                 提交订单不会扣话费，我们的客服人员会尽快和您确认订单信息。
             </div>
             <div class="plum-container section11">
-                <a class="section11-btn btn-tel" href="tel:4001889892"><span>&nbsp;</span>咨询电话 400-188-9892</a>
+                <a class="section11-btn btn-tel" href="tel:4001889892" onclick="_gaq.push(['_trackEvent', 'tel', 'click', '400-188-9892 (3)']);"><span>&nbsp;</span>咨询电话 400-188-9892</a>
             </div>
             <div class="section12 br-line">&nbsp;</div>
             <div class="section13">
@@ -195,5 +195,16 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-42490366-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
 </html>

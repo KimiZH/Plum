@@ -116,7 +116,7 @@
         <div class="plum-container section9">
             <form method="post" action="posthandler.aspx" target="_self">
                 <input name="number" type="hidden" value="1" />
-                <input name="source" type="hidden" value="1" />
+                <input name="source" type="hidden" value="<%=source %>" />
                 <asp:Repeater ID="typeidRepeater" runat="server">
                     <ItemTemplate>
                         <div class="form-radio br-line">

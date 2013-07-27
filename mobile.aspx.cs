@@ -11,17 +11,6 @@ public partial class mobile : System.Web.UI.Page
     protected string source = "1";
     protected void Page_Load(object sender, EventArgs e)
     {
-        var glbURL = "";
-        try
-        {
-            glbURL = Request.Url.ToString();
-        }
-        catch { }
-        if (glbURL != "" && System.Text.RegularExpressions.Regex.IsMatch(glbURL, "https?://.*?igo1\\.cn[/$]"))
-        {
-            source = "3";
-        }
-
         var err = false;
         var msgErr = "";
 
@@ -37,6 +26,12 @@ public partial class mobile : System.Web.UI.Page
             //msgErr = "product error";
             requestProduct = "1";
         }
+
+        try
+        {
+            source = Page.RouteData.Values["source"].ToString();
+        }
+        catch { }
 
         if (!err)
         {

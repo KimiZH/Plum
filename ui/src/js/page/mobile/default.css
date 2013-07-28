@@ -271,15 +271,18 @@
 }
 .form-radio span
 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2.5em;
     color: #fff;
     margin-left: 0.5em;
 }
 .form-radio span b
 {
+    font-size: 20px;
     color: Red;
     font-weight: bold;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
 }
 .form-table
 {
@@ -443,5 +446,10 @@
 }
 .section17
 {
+    margin-bottom: 1em;
+}
+.section18
+{
+    margin-top: 1em;
     margin-bottom: 1em;
 }

@@ -21,6 +21,7 @@ public partial class posthandler : System.Web.UI.Page
         var requestAddress = "";
         var requestZipCode = "";
         var productId = "";
+        var orderId = "";
 
         try
         {
@@ -146,12 +147,24 @@ public partial class posthandler : System.Web.UI.Page
 
         if (!err)
         {
+            var year = DateTime.Now.Year.ToString();
+            var month = DateTime.Now.Month.ToString();
+            var day = DateTime.Now.Day.ToString();
+            if (month.Length < 2)
+            {
+                month = "0" + month;
+            }
+            if (day.Length < 2)
+            {
+                day = "0" + day;
+            }
             var connStr = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["PlumDB"].ToString();
             System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(connStr);
             conn.Open();
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(
                 "select typeid,productid from PlumDB.dbo.product_type with(nolock) order by typeid asc "
-                + "select sourceid from PlumDB.dbo.source with(nolock) order by sourceid asc ",
+                + "select sourceid from PlumDB.dbo.source with(nolock) order by sourceid asc "
+                + "select count(*) from PlumDB.dbo.main with(nolock) where insertDatetime > '" + year + "-" + month + "-" + day + " 00:00:00' ",
                 conn
             );
             System.Data.SqlClient.SqlDataAdapter adapter = new System.Data.SqlClient.SqlDataAdapter(cmd);
@@ -189,6 +202,19 @@ public partial class posthandler : System.Web.UI.Page
                     msgErr = "source error";
                 }
             }
+            if (!err)
+            {
+                orderId = (int.Parse(dsValid.Tables[2].Rows[0][0].ToString()) + 1).ToString();
+                if (orderId.Length < 2)
+                {
+                    orderId = "00" + orderId;
+                }
+                else if (orderId.Length < 3)
+                {
+                    orderId = "0" + orderId;
+                }
+                orderId = year + month + day + orderId;
+            }
 
             if (!err)
             {
@@ -198,7 +224,7 @@ public partial class posthandler : System.Web.UI.Page
                 try
                 {
                     cmd = new System.Data.SqlClient.SqlCommand(
-                        "insert into PlumDB.dbo.customer values(@name, @mobile, @address, @zipcode) select IDENT_CURRENT('PlumDB.dbo.customer')",
+                        "insert into PlumDB.dbo.customer values(@name, @mobile, @address, @zipcode, NULL) select IDENT_CURRENT('PlumDB.dbo.customer')",
                         conn
                     );
                     cmd.Parameters.Add("@name", System.Data.SqlDbType.NChar);
@@ -226,7 +252,7 @@ public partial class posthandler : System.Web.UI.Page
                     if (customerId > 0)
                     {
                         cmd = new System.Data.SqlClient.SqlCommand(
-                            "insert into PlumDB.dbo.main (productId, type, source, customerId, status, number) values (@productId, @typeId, @source, @customerId, @status, @number) select IDENT_CURRENT('PlumDB.dbo.main')",
+                            "insert into PlumDB.dbo.main (productId, type, source, customerId, status, number, orderId) values (@productId, @typeId, @source, @customerId, @status, @number, @orderId) select IDENT_CURRENT('PlumDB.dbo.main')",
                             conn
                         );
 
@@ -247,6 +273,9 @@ public partial class posthandler : System.Web.UI.Page
 
                         cmd.Parameters.Add("@number", System.Data.SqlDbType.Int);
                         cmd.Parameters["@number"].Value = requestNum;
+
+                        cmd.Parameters.Add("@orderId", System.Data.SqlDbType.NChar);
+                        cmd.Parameters["@orderId"].Value = orderId;
 
                         try
                         {

@@ -74,7 +74,7 @@ public partial class Admin_del : System.Web.UI.Page
             if (!err)
             {
                 cmd = new System.Data.SqlClient.SqlCommand(
-                    "delete from PlumDB.dbo.main where id = " + requestId + " ",
+                    "update PlumDB.dbo.main set isdel = 1 where id = " + requestId + " ",
                     conn
                 );
                 result = cmd.ExecuteNonQuery();

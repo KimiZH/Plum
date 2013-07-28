@@ -41,8 +41,8 @@
                 $id = $tr.find('.plum-admin-list-id-feild'),
                 $status = $tr.find('.plum-admin-list-status-feild select');
             $btn.bind('click', function () {
-                if (confirm('确定要 更改 订单 ' + $id.html() + ' 的状态为 \'' + $status.find('> option').eq($status.get(0).selectedIndex).html() + '\' 吗？')) {
-                    $frmStatus.find('input[name=id]').val($id.html());
+                if (confirm('确定要 更改 订单 ' + $id.attr('data-id') + ' 的状态为 \'' + $status.find('> option').eq($status.get(0).selectedIndex).html() + '\' 吗？')) {
+                    $frmStatus.find('input[name=id]').val($id.attr('data-id'));
                     $frmStatus.find('input[name=status]').val($status.val());
                     $frmStatus.submit();
                 }
@@ -53,8 +53,8 @@
                 $tr = $btn.parents('tr'),
                 $id = $tr.find('.plum-admin-list-id-feild');
             $btn.bind('click', function () {
-                if (confirm('确定要 删除 订单 ' + $id.html() + ' 的记录吗？')) {
-                    $frmDel.find('input[name=id]').val($id.html());
+                if (confirm('确定要 删除 订单 ' + $id.attr('data-id') + ' 的记录吗？')) {
+                    $frmDel.find('input[name=id]').val($id.attr('data-id'));
                     $frmDel.submit();
                 }
             });

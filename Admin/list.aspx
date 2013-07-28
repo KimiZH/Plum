@@ -59,8 +59,10 @@
                     <td>电话</td>
                     <td>地址</td>
                     <td>邮编</td>
-                    <td>状态</td>
                     <td>时间</td>
+                    <td>状态</td>
+                    <td>描述</td>
+                    <td>更新</td>
                     <%if (auth < 1000)
                         {%>
                     <td align="center">操作</td>
@@ -69,7 +71,7 @@
                 <asp:Repeater ID="listRepeater" runat="server">
                     <ItemTemplate>
                         <tr class="plum-admin-list-item">
-                            <td class="plum-admin-list-id-feild"><%# Eval("id") %></td>
+                            <td class="plum-admin-list-id-feild" data-id="<%# Eval("id")%>"><%# Eval("orderId")%></td>
                             <td><%# Eval("product_title") %></td>
                             <td><%# Eval("product_type") %></td>
                             <td><%# Eval("number") %></td>
@@ -79,8 +81,10 @@
                             <td><%# Eval("mobile") %></td>
                             <td><%# Eval("address") %></td>
                             <td><%# Eval("zipcode") %></td>
-                            <td class="plum-admin-list-status-feild"><%# Eval("status").ToString().Trim() %></td>
                             <td><%# Eval("insertDatetime") %></td>
+                            <td class="plum-admin-list-status-feild"><%# Eval("status").ToString().Trim() %></td>
+                            <td><%# Eval("description") %></td>
+                            <td><%# Eval("updateDatetime") %></td>
                             <%if (auth < 1000)
                                 {%>
                             <td align="center">

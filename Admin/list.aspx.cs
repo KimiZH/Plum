@@ -49,13 +49,14 @@ public partial class Admin_list : System.Web.UI.Page
         conn.Open();
         System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(
             "select top " + pagesize.ToString() + " "
-            + "id, product.title as product_title, left(product_type.title, 5) as product_type, number, cast(product_type.price as decimal(38,0)) as price, source.title as [source], customer.name as name, customer.mobile as mobile, customer.[address] as [address], customer.[zipcode] as [zipcode], [status].title as [status], convert(varchar(100), insertDatetime, 120) as insertDatetime "
+            + "id, orderId, product.title as product_title, left(product_type.title, 5) as product_type, number, cast(product_type.price as decimal(38,0)) as price, source.title as [source], customer.name as name, customer.mobile as mobile, customer.[address] as [address], customer.[zipcode] as [zipcode], convert(varchar(100), insertDatetime, 120) as insertDatetime, [status].title as [status], customer.description as description, convert(varchar(100), updateDatetime, 120) as updateDatetime "
             + "from (((((PlumDB.dbo.main inner join PlumDB.dbo.product on main.[productId] = product.productid) "
             + "inner join PlumDB.dbo.[product_type] on main.[type] = [product_type].typeid) "
             + "inner join PlumDB.dbo.[source] on main.[source] = [source].sourceid) "
             + "left join PlumDB.dbo.customer on main.customerId = customer.customerid) "
             + "inner join PlumDB.dbo.[status] on main.[status] = [status].statusid) "
-            + ((page > 1) ? "where (id not in (select top " + (pagesize * (page - 1)).ToString() + " id from PlumDB.dbo.main order by insertDatetime desc)) " : "")
+            + "where isdel = 0 "
+            + ((page > 1) ? "and (id not in (select top " + (pagesize * (page - 1)).ToString() + " id from PlumDB.dbo.main order by insertDatetime desc)) " : "")
             + "order by insertDatetime desc "
             + "select COUNT(*) from PlumDB.dbo.main "
             + "select * from PlumDB.dbo.status with(nolock) order by statusid asc ",

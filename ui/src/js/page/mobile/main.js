@@ -13,10 +13,13 @@
 
     $(function () {
         var $form = $('form');
-         $('.section16-right a').each(function (i) {
+        $('.section16-right a').each(function (i) {
             $(this).bind('click', function () {
                 $('.form-radio').eq(i).click();
             });
+        });
+        $('.btn-order').bind('click', function () {
+            $('.form-radio').eq(1).click();
         });
         $('.btn-order, .section16-right a').bind('click', function () {
             window.document.body.scrollTop = parseInt($form.offset().top);

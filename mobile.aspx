@@ -125,7 +125,7 @@
             </div>
             <table style="width:100%;">
                 <tr>
-                    <td class="section16-td-left">用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</td>
+                    <td class="section16-td-left">用量：</td>
                     <td class="section16-td-right">12盒，180天量，减重40-80斤</td>
                 </tr>
                 <tr>
@@ -150,7 +150,7 @@
             </div>
             <table style="width:100%;">
                 <tr>
-                    <td class="section16-td-left">用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</td>
+                    <td class="section16-td-left">用量：</td>
                     <td class="section16-td-right">6盒，减重30-40斤</td>
                 </tr>
                 <tr>
@@ -175,7 +175,7 @@
             </div>
             <table style="width:100%;">
                 <tr>
-                    <td class="section16-td-left">用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</td>
+                    <td class="section16-td-left">用量：</td>
                     <td class="section16-td-right">4盒，60天用量，减重10-20斤</td>
                 </tr>
                 <tr>
@@ -200,7 +200,7 @@
             </div>
             <table style="width:100%;">
                 <tr>
-                    <td class="section16-td-left">用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</td>
+                    <td class="section16-td-left">用量：</td>
                     <td class="section16-td-right">2盒，30天用量，减重50-10斤</td>
                 </tr>
                 <tr>

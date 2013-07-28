@@ -113,6 +113,109 @@
                 </tr>
             </table>
         </div>
+        <div class="plum-container section16">
+            <div class="plum-container">
+                <div class="section16-left">
+                    终极组合装 <span>￥1698.</span><span class="section16-tail">00</span>
+                    <div class="section16-green">原价：3398元，立省1700元</div>
+               </div>
+                <div class="section16-right">
+                    <a href="javascript:void(0);">&nbsp;</a>
+                </div>
+            </div>
+            <table style="width:100%;">
+                <tr>
+                    <td class="section16-td-left">用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</td>
+                    <td class="section16-td-right">12盒，180天量，减重40-80斤</td>
+                </tr>
+                <tr>
+                    <td class="section16-td-left">适用人群：</td>
+                    <td class="section16-td-right">先天肥胖，超级肥胖，难以自控者</td>
+                </tr>
+                <tr>
+                    <td class="section16-td-left">功效特点：</td>
+                    <td class="section16-td-right">一边享受美食，一边享受美丽，减肥美食两不误，彻底告别“大肚腩”，“重型坦克”时代！</td>
+                </tr>
+            </table>
+        </div>
+        <div class="plum-container section16">
+            <div class="plum-container">
+                <div class="section16-left">
+                    惊喜组合装 <span>￥899.</span><span class="section16-tail">00</span>
+                    <div class="section16-green">原价：1699元，立省800元</div>
+               </div>
+                <div class="section16-right">
+                    <a href="javascript:void(0);">&nbsp;</a>
+                </div>
+            </div>
+            <table style="width:100%;">
+                <tr>
+                    <td class="section16-td-left">用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</td>
+                    <td class="section16-td-right">6盒，减重30-40斤</td>
+                </tr>
+                <tr>
+                    <td class="section16-td-left">适用人群：</td>
+                    <td class="section16-td-right">全身肥胖，局部特别肥胖，减肥后反弹者</td>
+                </tr>
+                <tr>
+                    <td class="section16-td-left">功效特点：</td>
+                    <td class="section16-td-right">不用运动，手臂、大腿、腹部的脂肪都被清理的干干净净，从根本上消除脂肪，身体更加完美无缺！</td>
+                </tr>
+            </table>
+        </div>
+        <div class="plum-container section16">
+            <div class="plum-container">
+                <div class="section16-left">
+                    享受组合装 <span>￥699.</span><span class="section16-tail">00</span>
+                    <div class="section16-green">原价：1299元，立省600元</div>
+               </div>
+                <div class="section16-right">
+                    <a href="javascript:void(0);">&nbsp;</a>
+                </div>
+            </div>
+            <table style="width:100%;">
+                <tr>
+                    <td class="section16-td-left">用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</td>
+                    <td class="section16-td-right">4盒，60天用量，减重10-20斤</td>
+                </tr>
+                <tr>
+                    <td class="section16-td-left">适用人群：</td>
+                    <td class="section16-td-right">顽固性肥胖，便秘，产后减肥者</td>
+                </tr>
+                <tr>
+                    <td class="section16-td-left">功效特点：</td>
+                    <td class="section16-td-right">不需要节食，不用运动，想瘦哪就瘦哪，瘦身，排毒一并解决！</td>
+                </tr>
+            </table>
+        </div>
+        <div class="plum-container section16">
+            <div class="plum-container">
+                <div class="section16-left">
+                    体验组合装 <span>￥399.</span><span class="section16-tail">00</span>
+                    <div class="section16-green">原价：699元，立省300元</div>
+               </div>
+                <div class="section16-right">
+                    <a href="javascript:void(0);">&nbsp;</a>
+                </div>
+            </div>
+            <table style="width:100%;">
+                <tr>
+                    <td class="section16-td-left">用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</td>
+                    <td class="section16-td-right">2盒，30天用量，减重50-10斤</td>
+                </tr>
+                <tr>
+                    <td class="section16-td-left">适用人群：</td>
+                    <td class="section16-td-right">单纯性肥胖，皮下脂肪过多人群</td>
+                </tr>
+                <tr>
+                    <td class="section16-td-left">功效特点：</td>
+                    <td class="section16-td-right">不用运动，磕着享瘦，第三天感觉排便通畅，魔鬼身材领先一步！</td>
+                </tr>
+            </table>
+        </div>
+        <div class="plum-container section17">
+            <a class="section11-btn btn-tel" href="tel:4001889892" onclick="_gaq.push(['_trackEvent', 'tel', 'click', '400-188-9892 (3)']);"><span>&nbsp;</span>咨询电话 400-188-9892</a>
+        </div>
         <div class="plum-container section9">
             <form method="post" action="posthandler.aspx" target="_self">
                 <input name="number" type="hidden" value="1" />
@@ -179,7 +282,7 @@
                 提交订单不会扣话费，我们的客服人员会尽快和您确认订单信息。
             </div>
             <div class="plum-container section11">
-                <a class="section11-btn btn-tel" href="tel:4001889892" onclick="_gaq.push(['_trackEvent', 'tel', 'click', '400-188-9892 (3)']);"><span>&nbsp;</span>咨询电话 400-188-9892</a>
+                <a class="section11-btn btn-tel" href="tel:4001889892" onclick="_gaq.push(['_trackEvent', 'tel', 'click', '400-188-9892 (4)']);"><span>&nbsp;</span>咨询电话 400-188-9892</a>
             </div>
             <div class="section12 br-line">&nbsp;</div>
             <div class="section13">

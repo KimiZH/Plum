@@ -66,4 +66,20 @@ public partial class mobile : System.Web.UI.Page
             this.typeidRepeater.DataBind();
         }
     }
+    protected override void Render(HtmlTextWriter output)
+    {
+        System.IO.StringWriter stringWriter = new System.IO.StringWriter();
+        base.Render(new HtmlTextWriter(stringWriter));
+        string html = stringWriter.ToString();
+
+        if (!debug)
+        {
+            html = System.Text.RegularExpressions.Regex.Replace(html, "\\t", "");
+            html = System.Text.RegularExpressions.Regex.Replace(html, "\\r", "");
+            html = System.Text.RegularExpressions.Regex.Replace(html, "\\n", "");
+            html = System.Text.RegularExpressions.Regex.Replace(html, "    ", "");
+        }
+
+        output.WriteLine(html.Trim());
+    }
 }

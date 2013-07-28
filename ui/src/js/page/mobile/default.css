@@ -170,7 +170,7 @@
 }
 .section8-title
 {
-    color: #f98911;
+    color: Orange;
     font-size: 16px;
 }
 .section8-picarea
@@ -384,4 +384,63 @@
     text-align: center;
     font-size: 16px;
     color: #fff;
+}
+.section16
+{
+    width: 96%;
+    margin: 0 2% 1em 2%;
+}
+.section16-left
+{
+    float: left;
+    color: Orange;
+    font-size: 24px;
+}
+.section16-right
+{
+    float: right;
+}
+.section16-left span
+{
+    color: #ff6100;
+    font-size: 20px;
+    font-weight: bold;
+}
+.section16-left span.section16-tail
+{
+    font-size: 12px;
+}
+.section16-green
+{
+    color: Green;
+    font-size: 14px;
+    text-align: right;
+}
+.section16-right a
+{
+    display: inline-block;
+    width: 82px;
+    height: 27px;
+    margin-top: 16px;
+    text-decoration: none;
+    background: url(data:image/jpg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QODaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjAtYzA2MCA2MS4xMzQ3NzcsIDIwMTAvMDIvMTItMTc6MzI6MDAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcFJpZ2h0cz0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3JpZ2h0cy8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBSaWdodHM6TWFya2VkPSJGYWxzZSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowODI5OTk4MEY3NTUxMUUyQjRCQUE1QjM3RDI2MkRDNCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowODI5OTk3RkY3NTUxMUUyQjRCQUE1QjM3RDI2MkRDNCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgNy4wIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InV1aWQ6NGUxZDk0ZjYtZjNiMi0xMWUyLThmODItOWIwYjk0ZDQ1MDE5IiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6YjI5MDdmYjMtZjNhYS0xMWUyLThmODItOWIwYjk0ZDQ1MDE5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8AAEQgAGwBSAwERAAIRAQMRAf/EAJQAAAEFAQEBAAAAAAAAAAAAAAABAwUGBwIECAEBAAIDAQAAAAAAAAAAAAAAAAMEAQIGBRAAAgEDAgIHBQYHAAAAAAAAAQIDABEEEgUhMUFRoSIyE2NhcQYWB8FCgjMUFYFSkqJTg5MRAAIBAgMFBwQDAAAAAAAAAAABAhEEMVEDIUGREhRhIkJSEwYWgaHhU9HCBf/aAAwDAQACEQMRAD8A+mN33eHAhZmYLYd5j0e721Hq6sdOLlJ0ijEpJKrKbkfG0zOTGhK9BZjfsrndX3Ft7kNnays7nJDXzlmcLxix5G541H8in5FxZjqXkJ86ZPSg/qNPkU/1rix1LyD50yrX0Cx5HUafIp+RcWOpeQD41yTyQH3MafIp/rXFjqXkL855fTGAerUaP3FPyLix1LyEb41ylFygtz8R5U+RT8i4sdS8hMH6hRzOSjJKqnvmGQOR77GpYe4Gn39Oi7PyZVzmi7bNvUO4QqytqvyPt6jXQaGvDVipwdUyzGSaqiUqUyZn9Rs+RM2DHJsrBpCOuxt2XrnfcEnywju2la53FRjy5PMXQvmNfupbVc9VumuaituzEq0J7JecY+S4xg+HFGpwk8gahLOASp7v3LHVXpzjKj2d2mxcu9/wStMkJjOMNjCred5KmO406SMbgw1NaxJ52AvU84vk2Y0/qbPAjdxyMoY+Tk4jkCHIKyurqULeUvFBbxE8Dp51V1eajcXhLPs3fg0ddxIYObI+7ZkUpZvKihdY+I+4Cw4W5k8umrGlJvUkm8EjZPaeLe54nwp8lJIZV1RIvlAXQi4IDWvpI5X6qgu0nBuqeBieBnfxvl5B2xEQkQPKBkW6VtdQfYWqrbpV7SOJDYWUyb1tpx0WLcWIGXHCLLoNrawOAJTiw/jViUaxdcDY2T6fbhIdwmxwSV0CUeyzWFen7fk6zj4dj+pNbbzVL10paKV9RPhOfd8RZsJhHnY5L47N4WuLNG1uhhVK+s1r6fK8dxpqQ5lQyKebd8Cby8zbcvHyEPOONpFuOlXSuR1P8y4g8GUnpSRz++7j/h3D/nNWvR3OUvuY5JHP7xl6i36XO1MpRj5MhJUi2k8OVY6G48rHpyCLeMuJleLFzo2Q3RlhkBB5XFhSNjcLCLHpyFO9ZzFi2PnkuwdyYZbsw5MesijsrjKX3HJIH3vOeJYXx89ok4pGYZCoPsFHZXDVGpU+o5JDMma0qFJMDKZGFmVsdyCOogiisddeFj05ZDe2YLiUx7Tsc/6iXgSIWjvf+Z35DrqdWVzqOjTNvTmzYvp38JZW2wvPnlWzskq2Ro8Ear4Yl93TXU/59kreFPE8S3p6fKi+1eJDib8s+H8XKgILK0azbyv7vtrKAx3fS7aAO76XbQB3fS7aAO76XbQB3fS7aAO76XbQDuPo1C/lW/F9lGCdxfyV8H+vw1gDtAf/2Q==) no-repeat center center;
+    background-size: cover;
+}
+.section16-td-left
+{
+    background-color: #c3af8c;
+    padding: 0.4em 0.8em;
+    width: 5em;
+    color: #fff;
+    vertical-align: top;
+}
+.section16-td-right
+{
+    background-color: #ffefd5;
+    padding: 0.4em 0.8em;
+    color: gray;
+}
+.section17
+{
+    margin-bottom: 1em;
 }

@@ -49,7 +49,7 @@ public partial class Admin_list : System.Web.UI.Page
         conn.Open();
         System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(
             "select top " + pagesize.ToString() + " "
-            + "id, product.title as product_title, product_type.title as product_type, number, product_type.price, source.title as [source], customer.name as name, customer.mobile as mobile, customer.[address] as [address], customer.[zipcode] as [zipcode], [status].title as [status], insertDatetime "
+            + "id, product.title as product_title, left(product_type.title, 5) as product_type, number, cast(product_type.price as decimal(38,0)) as price, source.title as [source], customer.name as name, customer.mobile as mobile, customer.[address] as [address], customer.[zipcode] as [zipcode], [status].title as [status], convert(varchar(100), insertDatetime, 120) as insertDatetime "
             + "from (((((PlumDB.dbo.main inner join PlumDB.dbo.product on main.[productId] = product.productid) "
             + "inner join PlumDB.dbo.[product_type] on main.[type] = [product_type].typeid) "
             + "inner join PlumDB.dbo.[source] on main.[source] = [source].sourceid) "

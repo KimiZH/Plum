@@ -38,7 +38,9 @@
 
     void RegisterRoutes(RouteCollection routeCollection)
     {
-        routeCollection.MapPageRoute("index", "", "~/mobile.aspx", false, new RouteValueDictionary { { "product", "1" } });
+        routeCollection.MapPageRoute("index", "", "~/index.aspx", false);
+        //routeCollection.MapPageRoute("index", "", "~/mobile.aspx", false, new RouteValueDictionary { { "product", "1" } });
+        
         routeCollection.MapPageRoute("aigou", "igo", "~/mobile.aspx", false, new RouteValueDictionary { { "product", "1" }, { "source", "3" } });
         routeCollection.MapPageRoute("aigou001", "igo001", "~/mobile.aspx", false, new RouteValueDictionary { { "product", "1" }, { "source", "4" } });
         routeCollection.MapPageRoute("aigou002", "igo002", "~/mobile.aspx", false, new RouteValueDictionary { { "product", "1" }, { "source", "5" } });

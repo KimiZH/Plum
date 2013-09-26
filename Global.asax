@@ -82,5 +82,7 @@
         routeCollection.MapPageRoute("aigou010", "igo010", "~/mobile.aspx", false, new RouteValueDictionary { { "product", "1" }, { "source", "13" } });
 
         routeCollection.MapPageRoute("pingan-xiaoedaikuan", "pasydk/mobile/index/{category}_{id}.html", "~/pingan-xiaoedaikuan.aspx", false, new RouteValueDictionary { { "category", @"\d{2}" } }, new RouteValueDictionary { { "id", @"\d{3}" } });
+
+        routeCollection.MapPageRoute("cmgegame_fzjh_v2.2_19747", "gmzjh/mobile/index/P19497", "~/download.aspx", false, new RouteValueDictionary { { "path", "apk\\cmgegame_fzjh_v2.2_19747.apk" } });
     }
 </script>
